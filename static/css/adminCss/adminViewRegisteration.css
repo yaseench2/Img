@@ -1,0 +1,55 @@
+@media print {
+    .heading{
+        display: none;
+    }
+    header, footer, aside, form, … {
+        display: none;
+    }
+    .NavbarUserImage{
+        display: none;
+    }
+    .Navbarusernameid{
+        display: none;
+    }
+    .navbarloginbtn{
+        display: none;
+    }
+    .filterbtn{
+        display: none;
+    }
+    .NavbarLogo{
+        height: 5vh;
+    }
+  }
+
+body {
+    font-family: Montserrat;
+}
+.tablehead{
+    background-color:#FFEFDB;
+    font-size: 14px;
+}
+.filiterselect{
+    background-color: transparent;
+    border-radius: 20px;
+}
+.filterbtn{
+    background-color: #FFEFDB;
+    color: black;
+    border: 2px solid #e7e7e7;
+    width: 120px;
+    border-radius: 20px;
+}
+.filterbar{
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.custom-select{
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+  }
+  

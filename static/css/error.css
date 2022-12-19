@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #FBF0FF;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+.card {
+  margin-top: 20vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 50%;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: .25rem;
+  }
+  
+  .card .card-header {
+    background-color: #fff;
+    border-bottom: none;
+  }
+  @media screen and (max-width: 900px) {
+    .card{
+      height: 40vh;
+      width: auto;
+    }
+  }

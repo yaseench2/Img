@@ -1,0 +1,33 @@
+.UserStartTitle {
+    font-family: Montserrat;
+    color: #2E308F;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+    .UserStartTitle{
+        font-size: 25px;
+    }
+}
+
+.UserRegisterationBtn {
+    background-color: #FAF9F9;
+    color: black;
+    border: 2px solid #e7e7e7;
+    width: 180px;
+    font-family: Montserrat;
+}
+
+.UserRegisterationBtn:hover {
+    background-color: #FAF9F9;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.099), 0 1px 50px 0 rgba(0, 0, 0, 0.099);
+}
+
+.InputStyle {
+    border-radius: 25px;
+    border: solid 1px rgb(0, 0, 0);
+    background: transparent;
+    width: 300px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,62 @@
+body {
+    font-family: Montserrat;
+}
+
+.facilitatorDiv {
+    width: 90%;
+    background-color: white;
+    border-color: black;
+}
+.courseSubmitBtn{
+  color: black;
+  border: 2px solid #e7e7e7;
+  width: 180px;
+  font-family: Montserrat;
+}
+.courseSubmitBtn:hover{
+background-color: lightblue;
+box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.099), 0 1px 50px 0 rgba(0, 0, 0, 0.099);
+}
+.material-icons1 {
+    font-size: 90px;
+}
+
+.mat2 {
+    font-size: 35px;
+}
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 80%;
+    height: 36px;
+    background-color:transparent;
+    border-width: 0 0 1px 0;
+    border-color:black;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    bottom: 11px;
+    font-size: 16px;
+    line-height:30px;
+    font-weight: 400;
+    color:black;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+    -webkit-transform .2s ease-in-out;
+  }

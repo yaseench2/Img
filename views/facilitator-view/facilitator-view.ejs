@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="/css/PartialsCss/navbar.css">
+  <link rel="stylesheet" href="/css/PartialsCss/sidenav.css">
+  <link rel="stylesheet" href="/css/adminCss/adminViewRegisteration.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <%- include('../partials/facilitator-navbar.ejs'); %>
+    <div class="row">
+      <div class="col-md-2">
+        <%- include('../partials/facilitator-sidebar.ejs'); %>
+      </div>
+      <div class="col-md-10">
+        <div class="container  mt-4">
+          <div class="row">
+            <div class="col-md-8">
+              <p style="font-size: 26px;">Registeration Form</p>
+            </div>
+            <div class="col-md-4  col-6 d-flex justify-content-center">
+              <span><i class="material-icons filterbtn btn" id="viewfilterbtn" value="viewfilter"onclick="viewfilterdiv()">&#xe164;</i></span>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="filterdiv mb-4" id="viewfilter">
+            <form action="/Facilitator/Facilitator" method="post">
+              <div class="row">
+                <div class="col-md-4 mt-1 col-12 p-3">
+                  <div class="search-box">
+                    <div class="input-group">
+                      <input type="text" class="filterbar" placeholder="Spark pen" name="sparkPen">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-1 col-12 p-3">
+                  <div class="search-box">
+                    <div class="input-group">
+                      <input type="text" class="filterbar" placeholder="Designation" name="designation">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-1 col-12  p-3">
+                  <div class="search-box">
+                    <div class="input-group">
+                      <input type="text" class="filterbar" placeholder="Department" name="department">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-1 p-3 ">
+                  <div class="search-box">
+                    <div class="input-group">
+                      <select class="custom-select col-12  " id="inlineFormCustomSelectPref" name="category">
+                        <option value=" " selected disabled>Category</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="OBC">OBC</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-1 col-12 p-3">
+                  <div class="search-box">
+                    <div class="input-group">
+                      <input type="text" class="filterbar col-6 " placeholder="From yyyy-mm-dd" name="from">
+                      <input type="text" class="filterbar col-5 ml-4" placeholder="To yyyy-mm-dd" name="to">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-1 p-3 d-flex justify-content-center ">
+                  <span><button type="submit" class="material-icons filterbtn btn ">&#xe8b6;</button></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="table-responsive mb-5">
+            <table class="table">
+              <thead class="tablehead">
+                <tr>
+                  <td scope="col">Spark PEN</td>
+                  <td scope="col">Name</td>
+                  <td scope="col">Course Code</td>
+                  <td scope="col">Course Start</td>
+                  <td scope="col">Course End</td>
+                  <td scope="col">Qualification</td>
+                  <td scope="col">Email</td>
+                  <td scope="col">Gender</td>
+                  <td scope="col">Date of Birth</td>
+                  <td scope="col">Address</td>
+                  <td scope="col">Phone number</td>
+                  <td scope="col">Department</td>
+                  <td scope="col">Designation</td>
+                  <td scope="col">Category</td>
+                  <td scope="col">Remaining Service</td>
+                  <td scope="col">Hostel Accommodation</td>
+                  <td scope="col">Check In Date</td>
+                  <td scope="col">Check Out Date</td>
+                  <td scope="col">Check Out Time</td>
+                  <td scope="col">Food</td>
+                </tr>
+              </thead>
+              <tbody>
+                <%regUser.forEach((x)=>{%>
+                  <tr>
+                    <td><%=x.sparkPen%></td>
+                    <td><%=x.userName%></td>
+                    <td><%=x.courseCode%></td>
+                    <td><%=x.courseStart%></td>
+                    <td><%=x.courseEnd%></td>
+                    <td><%=x.qualification%></td>
+                    <td><%=x.email%></td>
+                    <td><%=x.gender%></td>
+                    <td><%=x.dob%></td>
+                    <td><%=x.address%></td>
+                    <td><%=x.contactNumber%></td>
+                    <td><%=x.department%></td>
+                    <td><%=x.designation%></td>
+                    <td><%=x.category%></td>
+                    <td><%=x.lrs%></td>
+                    <td><%=x.hostelAcc%></td>
+                    <td><%=x.checkInDate%></td>
+                    <td><%=x.checkOutDate%></td>
+                    <td><%=x.checkOutTime%></td>
+                    <td><%=x.food%></td>
+                  </tr>
+                  <%})%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script>
+
+  document.getElementById('viewfilter').style.display = 'none'
+  let mixBut = document.getElementById("viewfilterbtn");
+  mixBut.addEventListener("click", viewfilter);
+
+  function viewfilter() {
+    document.getElementById('viewfilter').style.display = 'block'
+    mixBut.removeEventListener("click", viewfilter);
+    mixBut.addEventListener("click", hidefilter);
+    mixBut.value = "hidefilter";
+  }
+
+  function hidefilter() {
+    document.getElementById('viewfilter').style.display = 'none'
+    mixBut.removeEventListener("click", hidefilter);
+    mixBut.addEventListener("click", viewfilter);
+    mixBut.value = "viewfilter";
+  }
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+.admincreatefacilitatorbtn{
+    background-color: #FFEFDB;
+    color: black;
+    border: 2px solid #e7e7e7;
+    width: 180px;
+    font-family: Montserrat;
+    border-radius: 20px;
+}
+body{
+    font-family: Montserrat;
+}
+.iconsize{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .profileimg{
+        width: 100px;
+    }
+}
+

@@ -1,0 +1,44 @@
+const mongoose=require('mongoose')
+let registrationSchema=new mongoose.Schema({
+    id:String,
+    sparkPen:String,
+    courseCode:String,
+    courseStart:String,
+    courseEnd:String,
+    qualification:String,
+    userName:String,
+    email:String,
+    gender:String,
+    dob:String,
+    address:String,
+    contactNumber:String,
+    department:String,
+    designation:String,
+    category:String,
+    lrs:String,
+    hostelAcc:String,
+    checkInDate:String,
+    checkOutDate:String,
+    checkOutTime:String,
+    food:String,
+    evaluation:{
+        q1:{type:String,default:'-'},
+        q2:{type:String,default:'-'},
+        q3:{type:String,default:'-'},
+        q4:{type:String,default:'-'},
+        q5:{type:String,default:'-'},
+        q6:{type:String,default:'-'},
+        q7:{type:String,default:'-'},
+        q8:{type:String,default:'-'},
+        q9:{type:String,default:'-'},
+        q10:{type:String,default:'-'},
+        q11:{type:String,default:'-'},
+        q12:{type:String,default:'-'},
+        q13:{type:String,default:'-'},
+        q14:{type:String,default:'-'},
+        q15:{type:String,default:'-'},
+        q16:{type:String,default:'-'}
+    }
+
+})
+module.exports=mongoose.model('Registeration',registrationSchema)

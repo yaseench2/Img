@@ -1,0 +1,17 @@
+
+body{
+    font-family: Open Sans;
+}
+.evaluationbg{
+    background-color: transparent;
+}
+.evaluationSubmitBtn{
+    color: black;
+    border: 2px solid #e7e7e7;
+    width: 180px;
+    font-family: Montserrat;
+}
+.evaluationSubmitBtn:hover{
+    background-color: lightblue;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.099), 0 1px 50px 0 rgba(0, 0, 0, 0.099);
+}
