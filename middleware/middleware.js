@@ -46,7 +46,6 @@ exports.isfacilitator=async (req,res,next)=>{
             return res.redirect('/login')
         }   
     }
-    
 }
 exports.isExpired=async(req,res,next)=>{
     const cookie=req.cookies

@@ -9,7 +9,7 @@ const cookieToken = async (user, res) => {
         goto = '/login'
     }
     const options = {
-        expires: new Date(Date.now() + 2 * 60 * 60 * 1000 ),
+        expires: new Date(Date.now() + 8 * 24 * 60 * 60 * 1000 ),
         httpOnly: true
     }
     return res.cookie('token', token, options).redirect(`${goto}`)
