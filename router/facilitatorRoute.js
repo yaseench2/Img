@@ -6,15 +6,15 @@ const router = express.Router()
 router
     .route('/')
 router
-    .route('/Facilitator')
+    .route('/facilitator')
     .get(isloggedIn,isfacilitator,FacilitatorGetView)
     .post(isloggedIn,isfacilitator,FacilitatorPostViewRegisterationFilter)
 router
-    .route('/Facilitator-Evaluation')
+    .route('/evaluation')
     .get(isloggedIn,isfacilitator,FacilitatorGetViewEvaluation)
     .post(isloggedIn,isfacilitator,FacilitatorPostViewEvaluationFilter)
 router
-    .route('/Facilitator-Profile/:id')
+    .route('/profile/:id')
     .get(isloggedIn,isfacilitator,FacilitatorGetViewProfile)
     
 module.exports=router

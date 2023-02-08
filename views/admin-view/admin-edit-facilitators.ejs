@@ -31,9 +31,9 @@
                     <hr>
                 </div>
                 <div class="container facilitatorDiv mt-5 mb-5 shadow border">
-                    <p class="p-3"><a href="/Admin/Admin-Facilitators" class="btn material-icons mat2">&#xe5cb;</a>
+                    <p class="p-3"><a href="/Admin/facilitators" class="btn material-icons mat2">&#xe5cb;</a>
                         <strong>Edit <%=facprofile.username%></strong></p>
-                    <form action="/Admin/Admin-EditFacilitator/<%=facprofile.id%>" method="post"enctype="multipart/form-data">
+                    <form action="/Admin/editFacilitator/<%=facprofile.id%>" method="post"enctype="multipart/form-data">
                         <input type="hidden" name="publicid" value="<%=facprofile.publicId%>">
                         <div class="col-md-4 ">
                             <div class="d-flex justify-content-center mb-4">

@@ -31,8 +31,8 @@
                     <hr>
                 </div>
                 <div class="container facilitatorDiv mt-5 mb-5 shadow border">
-                    <p class="p-3"><a href="/Admin/Admin-Facilitators" class="btn material-icons mat2">&#xe5cb;</a><strong><%=Aprofile.username%></strong></p>
-                    <form action="/Admin/Admin-Profile/<%=Aprofile.id%>" method="post" enctype="multipart/form-data"id="adminprofileform">
+                    <p class="p-3"><a href="/Admin/facilitators" class="btn material-icons mat2">&#xe5cb;</a><strong><%=Aprofile.username%></strong></p>
+                    <form action="/Admin/profile/<%=Aprofile.id%>" method="post" enctype="multipart/form-data"id="adminprofileform">
                         <input type="hidden" name="publicId" value="<%=Aprofile.publicId%>">
                         <div class="col-md-4 ">
                             <div class="d-flex justify-content-center material-icons material-icons1  mb-4">

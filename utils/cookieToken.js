@@ -2,9 +2,9 @@ const cookieToken = async (user, res) => {
     const token = await user.getjwtToken()
     let goto
     if (user.admin) {
-        goto = '/Admin/Admin-Facilitators'
+        goto = '/Admin/facilitators'
     } else if (user.facilitator) {
-        goto = '/Facilitator/Facilitator'
+        goto = '/Facilitator/facilitator'
     } else {
         goto = '/login'
     }

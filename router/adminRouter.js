@@ -9,50 +9,50 @@ const router = express.Router()
 router
     .route('/')
 router
-    .route('/Admin-Profile/:id')
+    .route('/profile/:id')
     .get(isloggedIn,isAdmin,AdminGetViewProfile)
     .post(isloggedIn,isAdmin,AdminPostViewProfile)
 
 router
-    .route('/Admin-Facilitators')
+    .route('/facilitators')
     .get(isloggedIn,isAdmin,AdminGetViewFacilitators)
 router
-    .route('/Admin-CreateFacilitator')
+    .route('/createFacilitator')
     .get(isloggedIn,isAdmin,AdminGetCreateFacilitator)
     .post(isloggedIn,isAdmin,AdminPostCreateFacilitator)
 router
-    .route('/Admin-EditFacilitator/:id')
+    .route('/editFacilitator/:id')
     .get(isloggedIn,isAdmin,AdminGetEditFacilitator)
     .post(isloggedIn,isAdmin,AdminPostEditFacilitator)
 router
-    .route('/Admin-DeleteFacilitator/:sparkPen')
+    .route('/deleteFacilitator/:sparkPen')
     .get(isloggedIn,isAdmin,AdminGetDeleteFacilitator)
 router
-    .route('/Admin-Courses')
+    .route('/courses')
     .get(isloggedIn,isAdmin,AdminGetViewCourses)
 router
-    .route('/Admin-CreateCourses')
+    .route('/createCourses')
     .get(isloggedIn,isAdmin,AdminGetCreateCourses)
     .post(isloggedIn,isAdmin,AdminPostCreateCourses)
 router
-    .route('/Admin-EditCourse/:id')
+    .route('/editCourse/:id')
     .get(isloggedIn,isAdmin,AdminGetEditCourse)
     .post(isloggedIn,isAdmin,AdminPostEditCourse)
 router
-    .route('/Admin-DeleteCourse/:id')
+    .route('/deleteCourse/:id')
     .get(isloggedIn,isAdmin,AdminGetDeleteCourse)
 router
-    .route('/Admin-FacilitatorProfile/:sparkPen')
+    .route('/facilitatorProfile/:sparkPen')
     .get(isloggedIn,isAdmin,AdminGetViewFacilitatorProfile)
 router
-    .route('/Admin-CourseProfile/:id')
+    .route('/courseProfile/:id')
     .get(isloggedIn,isAdmin,AdminGetViewCourseProfile)
 router
-    .route('/Admin-Evaluation')
+    .route('/evaluation')
     .get(isloggedIn,isAdmin,AdminGetViewEvaluation)
     .post(isloggedIn,isAdmin,AdminPostViewEvaluationFilter)
 router
-    .route('/Admin-Registeration')
+    .route('/registeration')
     .get(isloggedIn,isAdmin,AdminGetViewRegisteration)
     .post(isloggedIn,isAdmin,AdminPostViewFilter)
 

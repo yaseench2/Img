@@ -95,7 +95,7 @@ exports.AdminPostCreateFacilitator=async(req,res)=>{
                         publicId:publicId
                     })
                     setTimeout(() => {
-                        return res.redirect('/Admin/Admin-Facilitators')
+                        return res.redirect('/Admin/facilitators')
                     }, 10000);
                 }
                 
@@ -141,7 +141,7 @@ exports.AdminPostEditFacilitator=async(req,res)=>{
         }
     }
     setTimeout(() => {
-        return res.redirect('/Admin/Admin-Facilitators')
+        return res.redirect('/Admin/facilitators')
     }, 10000);
 }
 exports.AdminGetViewFacilitatorProfile=async(req,res)=>{
@@ -162,5 +162,5 @@ exports.AdminGetDeleteFacilitator=async(req,res)=>{
     let publicId=facprof.publicId
     await User.deleteOne({sparkPen:sparkPen})
     cloudinary.uploader.destroy(publicId)
-    return res.redirect('/Admin/Admin-Facilitators')
+    return res.redirect('/Admin/facilitators')
 }

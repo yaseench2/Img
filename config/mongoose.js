@@ -8,5 +8,5 @@ function connectdb() {
         .catch((x) => {
             console.log(x);
         })
-}
+    }
 module.exports = connectdb

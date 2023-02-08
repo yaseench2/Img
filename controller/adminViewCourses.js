@@ -26,7 +26,7 @@ exports.AdminPostCreateCourses=async(req,res)=>{
         courseStart:courseStart,
         courseEnd:courseEnd,
     })
-    return res.redirect('/Admin/Admin-courses')
+    return res.redirect('/Admin/courses')
 }
 exports.AdminGetEditCourse=async(req,res)=>{
     let loginedUser=req.user
@@ -50,7 +50,7 @@ exports.AdminPostEditCourse=async(req,res)=>{
         course.courseStart=courseStart
         course.courseEnd=courseEnd
         await course.save()
-        return res.redirect('/Admin/Admin-courses')
+        return res.redirect('/Admin/courses')
     }else{
         return res.redirect('/error')
     }
@@ -67,5 +67,5 @@ exports.AdminGetViewCourseProfile=async(req,res)=>{
 }
 exports.AdminGetDeleteCourse=async(req,res)=>{
     await Course.deleteOne({id:req.params.id})
-    return res.redirect('/Admin/Admin-courses')
+    return res.redirect('/Admin/courses')
 }

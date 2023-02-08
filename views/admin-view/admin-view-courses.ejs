@@ -27,17 +27,17 @@
             </div>
             <div class="col-md-10">
                 <div class="container mt-4 ">
-                    <p style="font-size: 26px;">Courses<a class="btn admincreatefacilitatorbtn float-right"href="/admin/Admin-CreateCourses">Add</a></p>
+                    <p style="font-size: 26px;">Courses<a class="btn admincreatefacilitatorbtn float-right"href="/Admin/createCourses">Add</a></p>
                     <hr>
                 </div>
                 <div class="row">
                     <%courses.forEach((x)=>{%>
                         <div class=" col-12 col-lg-4 col-md-3 mb-2">
                             <div class="bg-white rounded shadow-sm">
-                                <a href="/Admin/Admin-EditCourse/<%=x.id%>"class="btn material-icons iconsize">&#xE254;</a>
+                                <a href="/Admin/editCourse/<%=x.id%>"class="btn material-icons iconsize">&#xE254;</a>
                                 <a href="" class="btn material-icons iconsize float-right " data-toggle="modal"data-target="#my-modal">&#xE872;</a>
                                 <div class="p-3">
-                                    <a href="/Admin/Admin-CourseProfile/<%=x.id%>" class="text-decoration-none"><h5 class="text-dark"> <%=x.courseName%></h5></a>
+                                    <a href="/Admin/courseProfile/<%=x.id%>" class="text-decoration-none"><h5 class="text-dark"> <%=x.courseName%></h5></a>
                                     <p class="small text-muted mb-0"><%=x.courseCode%></p>
                                     <p class="small text-muted mb-0"><%=x.facilitatorName%></p>
                                     <p class="small text-muted mb-0"><%=x.courseStart%></p>
@@ -65,7 +65,7 @@
                                                         <button type="button" class="btn btn-light text-muted"data-dismiss="modal">Cancel</button>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <a class="btn btn-danger px-4" href="/Admin/Admin-DeleteCourse/<%=x.id%>">Delete</a>
+                                                        <a class="btn btn-danger px-4" href="/Admin/deleteCourse/<%=x.id%>">Delete</a>
                                                     </div>
                                                 </div>
                                             </div>

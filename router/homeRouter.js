@@ -6,14 +6,14 @@ router
     .route('/')
     .get(UserGetViewHomePage)
 router
-    .route('/Evaluation')
+    .route('/evaluation')
     .get(UserGetViewEvaluationSignPage)
     .post(UserPostEvaluationSignPage)
 router 
-    .route('/evalationsubmit')
+    .route('/evalationSubmit')
     .post(UserPostEvaluationPage)
 router
-    .route('/Registeration')
+    .route('/registeration')
     .get(UserGetViewRegisterPage)
     .post(UserPostViewRegisterPage)
 

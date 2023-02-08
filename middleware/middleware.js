@@ -16,9 +16,9 @@ exports.ifLoggedin=async(req,res,next)=>{
     }else{
         const decoded =await jwt.verify(token,process.env.JWT_SECRET)
         if(decoded.admin){
-            return res.redirect('/Admin/Admin-Facilitators')
+            return res.redirect('/Admin/facilitators')
         }else if(decoded.facilitator){
-            return res.redirect('/Facilitator/Facilitator')
+            return res.redirect('/Facilitator/facilitator')
         }else{
             return res.redirect('/error')
         }
